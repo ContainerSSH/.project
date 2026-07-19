@@ -1,0 +1,70 @@
+# .project metadata for ContainerSSH
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add adopters list (ADOPTERS.md)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "containerssh"
+name: "ContainerSSH"
+description: "ContainerSSH launches a new container for each SSH connection in Kubernetes, Podman or Docker. The user is transparently dropped in the container and the container is removed when the user disconnects. Authentication and container configuration are dynamic using webhooks, no system users required."
+type: "project"
+project_lead: "tsipinakis" # TODO: AUTO-DETECTED — please verify
+slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+  - name: "#containerssh"
+    link: "https://cloud-native.slack.com/"
+    primary: true
+
+maturity_log:
+  - phase: "sandbox"
+    date: "2022-09-14T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/210" # TODO: AUTO-DETECTED — please verify
+
+repositories:
+  - "https://github.com/containerssh/containerssh"
+
+website: "https://containerssh.io"
+
+artwork: "https://landscape.cncf.io/logos/containerssh.svg"
+
+# TODO: Add ADOPTERS.md if your project tracks adopters
+# adopters:
+#   path: "https://github.com/ContainerSSH/ContainerSSH/blob/main/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "ContainerSSH/ContainerSSH"
+
+
+security:
+  policy:
+    path: "https://github.com/ContainerSSH/ContainerSSH/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/ContainerSSH/ContainerSSH/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/ContainerSSH/ContainerSSH/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/ContainerSSH/ContainerSSH/blob/main/CODE_OF_CONDUCT.md"
+
+legal:
+  license:
+    path: "https://github.com/ContainerSSH/ContainerSSH/blob/main/LICENSE"
+  identity_type:
+    has_dco: true # AUTO-DETECTED — please verify
+    has_cla: false # AUTO-DETECTED — please verify
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/ContainerSSH/ContainerSSH/blob/main/README.md"
+
+landscape:
+  category: "Provisioning"
+  subcategory: "Security & Compliance"
+
+# CLOMonitor Score: 74/100
+# Documentation: 79 | License: 100 | Best Practices: 21 | Security: 55
